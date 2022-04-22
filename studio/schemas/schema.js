@@ -104,6 +104,6 @@ export default createSchema({
         ],
       },
     ]
-    /* Your types here! */
-  ),
+    
+  )
 })
