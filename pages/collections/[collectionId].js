@@ -65,7 +65,7 @@ const Collection = () => {
     if (!provider) return
 
     const sdk = new ThirdwebSDK(
-      provider.getSigner(),
+      provider.getSigner()
      /**  'https://eth-rinkeby.alchemyapi.io/v2/Ti-1FK2bCmkhL6I0paFGqqq7tqGQXgyQ'*/
     )
     return sdk.getMarketplaceModule(
