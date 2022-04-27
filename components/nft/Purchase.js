@@ -41,13 +41,8 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
     quantityDesired = 1,
     module = marketPlaceModule
   ) => {
-    console.log(listingId, quantityDesired, module, 'david')
-    await module
-      .buyoutDirectListing({
-        listingId: listingId,
-        quantityDesired: quantityDesired,
-      })
-      .catch((error) => console.error(error))
+    
+    await module.buyoutDirectListing({ listingId,quantityDesired })
 
     confirmPurchase()
   }
